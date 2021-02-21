@@ -1,0 +1,33 @@
+#Returns Flux from service
+GET http://localhost:8080/controller/collection
+Accept: application/json
+
+###
+#For reactive client testing. Self invokes /router/simple
+GET http://localhost:8080/controller/self/call
+Accept: application/json
+
+###
+#Returns Mono with delay
+GET http://localhost:8080/router/simple
+Accept: application/json
+
+###
+#Returns Flux of two elements
+GET http://localhost:8080/router/collection
+Accept: application/json
+
+###
+#Post, mono as request and response
+POST http://localhost:8080/router/post
+Content-Type: application/json
+
+body
+
+###
+
+
+
+
+
+
